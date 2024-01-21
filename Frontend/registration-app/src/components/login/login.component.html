@@ -1,0 +1,29 @@
+
+<div class="bootstrap-wrapper"> 
+    <div class="container mt">
+        <div class="row">
+            <div class="col-md-6 offset-md-3"> 
+                <h1 class="text-centre">Login Screen</h1>
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width">
+                        <mat-label>Username</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.userName"
+                        name="username"
+                        required type="text" matInput/>
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <mat-label>Password</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.password"
+                        name="password"
+                        required type="password" matInput/>
+                    </mat-form-field>
+                    <div class="container text-centre">
+                        <button mat-raised-button color="accent">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

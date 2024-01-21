@@ -1,0 +1,19 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-centre mt">
+        <h1 class="text-centre">Welcome to your Dashboard</h1>
+        <button (click)="logout()" mat-raised-button color="accent" class="bottom-space">Logout</button>
+        <form (ngSubmit)="onSubmit()">
+            <mat-form-field class="full-width">
+                <mat-label>Enter your new email address</mat-label>
+                <input 
+                [(ngModel)]="credentials.email"
+                name="email"
+                required type="text" matInput/>
+            </mat-form-field>
+            
+            <div class="container text-centre">
+                <button mat-raised-button color="accent">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
